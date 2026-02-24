@@ -30,21 +30,22 @@ export const recentSessions = [
     duration: 45,
     color: "#E5D0FF",
   },
+  
   {
     id: "2",
-    subject: "maths",
-    name: "Countsy the Number Wizard",
-    topic: "Derivatives & Integrals",
-    duration: 30,
-    color: "#FFDA6E",
-  },
-  {
-    id: "3",
     subject: "language",
     name: "Verba the Vocabulary Builder",
     topic: "English Literature",
     duration: 30,
     color: "#BDE7FF",
+  },
+  {
+    id: "3",
+    subject: "maths",
+    name: "Countsy the Number Wizard",
+    topic: "Derivatives & Integrals",
+    duration: 30,
+    color: "#FFDA6E",
   },
   {
     id: "4",
