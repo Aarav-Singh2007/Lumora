@@ -1,9 +1,10 @@
 
 'use server';
 
-// import {auth} from "@clerk/nextjs/server";
-// import {createSupabaseClient} from "@/lib/supabase";
+import {auth} from "@clerk/nextjs/server";
+import {createSupabaseClient} from "@/lib/supabase";
 import { revalidatePath } from "next/cache";
+import { CreateCompanion, GetAllCompanions } from "@/types";
 
 export const createCompanion = async (formData: CreateCompanion) => {
     const { userId: author } = await auth();
