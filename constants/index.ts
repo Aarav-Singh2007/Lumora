@@ -1,4 +1,4 @@
-export const subjects = [
+  export const subjects = [
   "maths",
   "language",
   "science",

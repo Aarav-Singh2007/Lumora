@@ -6,7 +6,7 @@ import NavItems from "../NavItems"
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar bg-amber-300">
         <Link href="/">
         <div className="flex items-center gap-2.5 cursor-pointer">
             <Image 

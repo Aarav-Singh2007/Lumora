@@ -5,6 +5,7 @@ import {auth} from "@clerk/nextjs/server";
 import {createSupabaseClient} from "@/lib/supabase";
 import { revalidatePath } from "next/cache";
 import { CreateCompanion, GetAllCompanions } from "@/types";
+import { error, log } from "console";
 
 export const createCompanion = async (formData: CreateCompanion) => {
     const { userId: author } = await auth();
@@ -186,3 +187,16 @@ export const getBookmarkedCompanions = async (userId: string) => {
   // We don't need the bookmarks data, so we return only the companions
   return data.map(({ companions }) => companions);
 };
+
+// export const getCompanion = async (id:string)=>{
+//     const supabase = createSupabaseClient();
+
+//     await { data,error}= await supabse
+//     .from('companions')
+//     .select()
+//     .eq('id',id);
+
+//     if(error) return console.log(error);
+
+//     return[0];
+// }

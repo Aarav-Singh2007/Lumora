@@ -71,13 +71,23 @@ export interface SavedMessage {
   content: string;
 }
 
+// export interface CompanionComponentProps {
+//   companionId: string;
+//   subject: string;
+//   topic: string;
+//   name: string;
+//   userName: string;
+//   userImage: string;
+//   voice: string;
+//   style: string;
+// }
 export interface CompanionComponentProps {
   companionId: string;
-  subject: string;
+  subject: string;      // singular
   topic: string;
   name: string;
   userName: string;
-  userImage: string;
-  voice: string;
-  style: string;
+  userImage?: string;
+  style?: React.CSSProperties;
+  voice?: string;
 }
