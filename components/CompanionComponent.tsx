@@ -5,7 +5,7 @@ import { vapi } from '@/lib/vapi.sdk';
 import { CompanionComponentProps } from '@/types';
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
-import { subjects, subjectsColors, voices, recentSessions } from '@/constants';
+// import { subjects, subjectsColors, voices, recentSessions } from '@/constants';
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import soundwaves from '@/constants/soundwaves.json';
 
