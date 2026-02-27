@@ -51,6 +51,7 @@ const CompanionComponent = ({
     const onCallEnd = () => {
       setCallStatus(CallStatus.FINISHED);
       console.log('Call ended');
+      //addTo Session history(companionId)
     };
 
     const onMessage = (message: any) => {
