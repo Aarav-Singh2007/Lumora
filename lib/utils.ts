@@ -28,7 +28,7 @@ export const configureAssistant = (voice: string, style: string) => {
       } else if (voiceObj && typeof voiceObj === 'object') {
         // If voices[voice] is an object with style properties
         const styleVoice = voiceObj[style as keyof typeof voiceObj];
-        voiceId = styleVoice || voiceObj.default || "sarah";
+        voiceId = styleVoice || voiceObj.casual || "sarah";
       }
     }
   } catch (error) {
