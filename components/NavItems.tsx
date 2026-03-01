@@ -10,7 +10,7 @@ const navItems = [
   { label: 'Quizes', href: '/Quizpage' },
   { label: 'My Journey', href: '/my-journey' },
   { label: 'Analyzer', href: '/lab' },
-  { label: 'Weekly Report', href: '/planner' }
+  { label: 'Planner', href: '/planner' }
 ]
 
 const NavItems = () => {
