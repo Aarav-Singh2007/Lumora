@@ -327,8 +327,9 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             serverMessages: [],
         }
 
-        // @ts-expect-error
-        vapi.start(configureAssistant(voice, style), assistantOverrides)
+        // @ts-expect-error as pexpected it cooorred
+        // vapi.start(configureAssistant(voice, style), assistantOverrides)
+        await vapi.start(configureAssistant(voice, style,"hi"), assistantOverrides);
     }
 
     const handleDisconnect = () => {
