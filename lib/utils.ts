@@ -94,6 +94,7 @@ export function cn(...inputs: ClassValue[]) {
 export const getSubjectColor = (subject: string) => {
   return subjectsColors[subject as keyof typeof subjectsColors];
 };
+HCCUHIUCHWDUCBKNX ZxmL MZoCuduiwehciugwcickjfuiwofh;oebccc
 
 export const configureAssistant = (
   voice: string,
